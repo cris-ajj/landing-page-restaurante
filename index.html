@@ -1,98 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>O Cantinho do Bairro</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
-  <style>
-    body { font-family: 'Work Sans', sans-serif; }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>O Cantinho do Bairro de Salvador - Sabor de Casa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                "primary": "#ee4b2b",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221310",
+            },
+            fontFamily: {
+                "display": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+    },
+}
+</script>
+<style>
+body { font-family: 'Work Sans', sans-serif; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { min-height: max(884px, 100dvh); }
+</style>
 </head>
-<body class="bg-yellow-50 text-gray-900">
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
 
-<!-- Header -->
-<header class="bg-orange-600 text-white py-6 sticky top-0 z-50">
-  <div class="container mx-auto flex justify-between items-center px-4">
-    <h1 class="text-3xl font-bold flex items-center gap-2">
-      🍽️ O Cantinho do Bairro
-    </h1>
-    <nav class="hidden md:flex gap-6">
-      <a href="#inicio" class="hover:text-yellow-200">Início</a>
-      <a href="#cardapio" class="hover:text-yellow-200">Cardápio</a>
-      <a href="#sobre" class="hover:text-yellow-200">Sobre</a>
-      <a href="#contato" class="hover:text-yellow-200">Contato</a>
-    </nav>
-    <button class="bg-yellow-400 text-orange-800 px-4 py-2 rounded hover:bg-yellow-300 font-bold">Reservar</button>
-  </div>
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">O Cantinho do Bairro de Salvador</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Início</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#cardapio">Cardápio</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#sobre">Sobre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contato">Contato</a>
+</nav>
+<button class="bg-primary text-white px-5 py-2 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity">Reservar</button>
+</div>
 </header>
 
-<!-- Hero -->
-<section id="inicio" class="relative">
-  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80"
-       class="w-full h-96 object-cover">
-  <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-    <div class="text-center text-white px-4">
-      <h2 class="text-4xl font-bold mb-4">Sabor de Casa no Coração do Bairro 🏡</h2>
-      <p class="mb-6 text-lg">Receitas caseiras, ingredientes frescos e carinho em cada prato!</p>
-      <a href="#cardapio" class="bg-yellow-400 text-orange-800 px-6 py-3 rounded hover:bg-yellow-300 font-bold">Ver Cardápio</a>
-    </div>
-  </div>
+<!-- Hero Section -->
+<section class="relative @container">
+<div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row max-w-7xl mx-auto items-center">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-[400px] @[480px]:min-w-[400px] @[864px]:w-1/2 shadow-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrcaXa-ILSeTFjMFPwJNgMXYq7iHACxs4xoXLoan603luDRYN4o3qAGsk9OlnRIB3yUlNCYkQxO1A4wEVr8FywHV1Orr63ycLjAY2ndhQQ0oIrh3_e_xdZ6YJcOsCavyagiAFD-zr6mjtmAPBdR9Ev9QDwLHKuTF1EzVRf5D_Lze5pjs28uOJujOoGrH08JEXaslaUb63C_Hnd8uzsQqJ5DZsEdAYr7eToY3zjp2Uepb8_fpWE7RfBf11yO87xhp0GBKhPfC--TTwb");'></div>
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center @[864px]:w-1/2">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl">
+Sabor de Casa no Coração do Bairro
+</h1>
+<h2 class="text-slate-600 dark:text-slate-400 text-lg font-normal leading-normal @[480px]:text-xl">
+Tradição e carinho em cada prato. Ingredientes frescos e receitas de família.
+</h2>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 md:flex-none min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:scale-105 transition-transform">
+Ver Cardápio
+</button>
+<button class="flex-1 md:flex-none min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary/10 text-primary text-base font-bold border border-primary/20 hover:bg-primary/20 transition-colors">
+Nossa História
+</button>
+</div>
+</div>
+</div>
 </section>
 
-<!-- Sobre -->
-<section id="sobre" class="py-16 bg-orange-50">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-2xl font-bold text-orange-700 mb-2">Nossa História ✨</h2>
-    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
-      O Cantinho do Bairro nasceu do amor pela comida caseira e pelo cuidado com cada cliente. 
-      Aqui, cada prato é preparado com receitas de família e ingredientes fresquinhos da região.
-    </p>
-    <div class="flex flex-col md:flex-row justify-center gap-6">
-      <div class="bg-white p-6 rounded shadow">
-        🥦 <strong>Ingredientes Locais</strong>
-        <p>Trabalhamos com produtores do bairro garantindo frescor e qualidade.</p>
-      </div>
-      <div class="bg-white p-6 rounded shadow">
-        👨‍👩‍👧 <strong>Gestão Familiar</strong>
-        <p>Cuidamos de cada detalhe, do atendimento à cozinha, com amor.</p>
-      </div>
-      <div class="bg-white p-6 rounded shadow">
-        🍲 <strong>Receitas Tradicionais</strong>
-        <p>Receitas passadas de geração em geração, com toque especial moderno.</p>
-      </div>
-    </div>
-  </div>
+<!-- About Section -->
+<section class="py-16 bg-white dark:bg-background-dark/50" id="sobre">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex flex-col gap-10 @container">
+<div class="flex flex-col gap-4 max-w-3xl">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm">Nossa História</h2>
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-black leading-tight @[480px]:text-5xl">
+Tradição, Raízes e Carinho
+</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+Nascemos do desejo de trazer a comida afetiva para o dia a dia. Somos um refúgio gastronômico local, focado em raízes familiares e no apoio aos produtores da nossa região.
+</p>
+</div>
+<!-- Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4 rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl">storefront</span>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Ingredientes Locais</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Trabalhamos exclusivamente com produtores e feiras vizinhas para garantir frescor absoluto.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl">family_restroom</span>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Gestão Familiar</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Cada detalhe do restaurante é cuidado por nossa família, do atendimento à cozinha.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl">restaurant_menu</span>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Receitas Ancestrais</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Pratos que atravessaram gerações, agora preparados com técnicas modernas de gastronomia.</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- Cardápio -->
-<section id="cardapio" class="py-16 bg-yellow-50">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-2xl font-bold text-orange-700 mb-2">Pratos Mais Pedidos 🍽️</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-      <!-- Prato 1 -->
-      <div class="bg-white rounded shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"
-             class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-bold text-lg">Prato Especial da Casa</h3>
-          <p class="text-gray-600 text-sm">Arroz, feijão, carne grelhada e salada fresca.</p>
-          <p class="font-bold mt-2">R$ 28,00</p>
-          <button class="mt-2 w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700">Pedir Agora</button>
-        </div>
-      </div>
-      <!-- Prato 2 -->
-      <div class="bg-white rounded shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80"
-             class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-bold text-lg">Macarrão Artesanal</h3>
-          <p class="text-gray-600 text-sm">Massa fresca com molho especial da casa.</p>
-          <p class="font-bold mt-2">R$ 32,00</p>
-          <button class="mt-2 w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700">Pedir Agora</button>
-        </div>
-      </div>
-      <!-- Prato 3 -->
-      <div class="bg-white rounded shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63?
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/10 py-12" id="contato">
+<div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">O Cantinho do Bairro de Salvador</h2>
+</div>
+<p class="text-slate-600 dark:text-slate-400 max-w-sm mb-6">
+Levando o sabor da tradição para sua mesa todos os dias. Onde cada cliente é tratado como parte da nossa família.
+</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 mb-6 uppercase text-sm tracking-widest">Funcionamento</h3>
+<ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
+<li>Seg - Sex: 11:30 às 22:00</li>
+<li>Sáb - Dom: 12:00 às 23:00</li>
+<li>Feriados: 12:00 às 16:00</li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 mb-6 uppercase text-sm tracking-widest">Contato</h3>
+<ul class="text-slate-600 dark:text-slate-400 space-y-4 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Rua Fictícia, 123<br/>Bairro Inventado, Salvador - BA</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>(71) 99999-0000</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-primary/5 text-center text-slate-500 text-xs">
+<p>© 2026 O Cantinho do Bairro de Salvador. Todos os direitos reservados.</p>
+</div>
+</footer>
+
+</body>
+</html>
