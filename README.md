@@ -1,2 +1,1 @@
-# landing-page-restaurante
-Landing page simples de restaurante criada com IA
+Landing page de restaurante criada com HTML e TailwindCSS
