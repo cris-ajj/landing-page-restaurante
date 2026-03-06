@@ -1,34 +1,39 @@
 # 🍽️ O Cantinho do Bairro - Landing Page
 
-🌟 Landing page simples de restaurante criada com **HTML** e **TailwindCSS**.
+Esta é uma **landing page fictícia** de restaurante criada com HTML, TailwindCSS e a ajuda da **IA** 🤖.  
 
-Este projeto é **fictício**, criado apenas como exemplo de página de restaurante.  
-Você pode trocar **nome, telefone, endereço e imagens** conforme desejar. 🏠📞
-
----
-
-## 🥘 Sobre o Projeto
-
-- Página moderna e responsiva, perfeita para exibir cardápio, contatos e história do restaurante.
-- Inclui seções de:
-  - 🏠 Home / Destaque
-  - 🍽️ Cardápio / Pratos Populares
-  - 🏡 Sobre / História
-  - 📞 Contato / Funcionamento
+O projeto apresenta: cardápio, fotos de pratos, história do restaurante, informações de contato e funcionamento.  
 
 ---
 
-## 💡 Tecnologias Usadas
-
+## 🖥️ Tecnologias utilizadas
 - HTML5
 - TailwindCSS
-- Google Fonts
-- Emojis para deixar o layout divertido 😄✨
+- Google Fonts (Work Sans)
+- Material Symbols para ícones
 
 ---
 
-## 🚀 Como Usar
+## 🌟 Funcionalidades
+- Header fixo com menu de navegação
+- Hero com imagem de destaque
+- Seção de cardápio com pratos mais pedidos
+- Sobre o restaurante (história e valores)
+- Depoimentos de clientes
+- Contato com endereço, telefone e redes sociais
+- Rodapé responsivo
+- Navegação inferior para dispositivos móveis
+- Totalmente responsivo e mobile-friendly 📱
 
-1. Clone o repositório:
+---
+
+## 📸 Imagens
+- As imagens de pratos e do restaurante são **fictícias**, apenas para demonstração.  
+- Todos os links de imagens estão hospedados publicamente (Unsplash / Google Photos).
+
+---
+
+## 💻 Como usar
+1. Clone o repositório:  
 ```bash
 git clone https://github.com/cris-ajj/landing-page-restaurante.git
