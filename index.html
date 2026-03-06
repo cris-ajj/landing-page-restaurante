@@ -53,11 +53,11 @@ body { min-height: max(884px, 100dvh); }
 <!-- Hero Section -->
 <section class="relative @container">
 <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row max-w-7xl mx-auto items-center">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-[400px] @[480px]:min-w-[400px] @[864px]:w-1/2 shadow-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrcaXa-ILSeTFjMFPwJNgMXYq7iHACxs4xoXLoan603luDRYN4o3qAGsk9OlnRIB3yUlNCYkQxO1A4wEVr8FywHV1Orr63ycLjAY2ndhQQ0oIrh3_e_xdZ6YJcOsCavyagiAFD-zr6mjtmAPBdR9Ev9QDwLHKuTF1EzVRf5D_Lze5pjs28uOJujOoGrH08JEXaslaUb63C_Hnd8uzsQqJ5DZsEdAYr7eToY3zjp2Uepb8_fpWE7RfBf11yO87xhp0GBKhPfC--TTwb");'></div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-[400px] @[480px]:min-w-[400px] @[864px]:w-1/2 shadow-2xl" style='background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80");'></div>
 <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center @[864px]:w-1/2">
 <div class="flex flex-col gap-2 text-left">
 <h1 class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl">
-Sabor de Casa no Coração do Bairro
+Sabor de Casa no Coração de Salvador
 </h1>
 <h2 class="text-slate-600 dark:text-slate-400 text-lg font-normal leading-normal @[480px]:text-xl">
 Tradição e carinho em cada prato. Ingredientes frescos e receitas de família.
@@ -109,52 +109,43 @@ Nascemos do desejo de trazer a comida afetiva para o dia a dia. Somos um refúgi
 </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-background-light dark:bg-background-dark border-t border-primary/10 py-12" id="contato">
-<div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="col-span-1 md:col-span-2">
-<div class="flex items-center gap-2 mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
-<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">O Cantinho do Bairro de Salvador</h2>
+<!-- Popular Dishes Section -->
+<section class="py-16 max-w-7xl mx-auto px-4" id="cardapio">
+<div class="text-center mb-12">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Favoritos</h2>
+<h1 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-slate-100">Pratos Mais Pedidos</h1>
 </div>
-<p class="text-slate-600 dark:text-slate-400 max-w-sm mb-6">
-Levando o sabor da tradição para sua mesa todos os dias. Onde cada cliente é tratado como parte da nossa família.
-</p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
-<span class="material-symbols-outlined text-xl">public</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
-<span class="material-symbols-outlined text-xl">share</span>
-</a>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-white dark:bg-background-dark border border-primary/5 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+<div class="h-64 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1600891963962-d7c28aa7b9c8?auto=format&fit=crop&w=800&q=80');"></div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Salada da Horta 🥗</h3>
+<span class="text-primary font-bold">R$ 38</span>
 </div>
-</div>
-<div>
-<h3 class="font-bold text-slate-900 dark:text-slate-100 mb-6 uppercase text-sm tracking-widest">Funcionamento</h3>
-<ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
-<li>Seg - Sex: 11:30 às 22:00</li>
-<li>Sáb - Dom: 12:00 às 23:00</li>
-<li>Feriados: 12:00 às 16:00</li>
-</ul>
-</div>
-<div>
-<h3 class="font-bold text-slate-900 dark:text-slate-100 mb-6 uppercase text-sm tracking-widest">Contato</h3>
-<ul class="text-slate-600 dark:text-slate-400 space-y-4 text-sm">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">location_on</span>
-<span>Rua Fictícia, 123<br/>Bairro Inventado, Salvador - BA</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">call</span>
-<span>(71) 99999-0000</span>
-</li>
-</ul>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Mix de folhas jovens, queijo vegano, castanhas tostadas e vinagrete de mel fictício.</p>
+<button class="w-full py-2 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-colors">Pedir Agora</button>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-primary/5 text-center text-slate-500 text-xs">
-<p>© 2026 O Cantinho do Bairro de Salvador. Todos os direitos reservados.</p>
+<!-- Card 2 -->
+<div class="group bg-white dark:bg-background-dark border border-primary/5 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+<div class="h-64 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1600891964585-8be26a7f52e1?auto=format&fit=crop&w=800&q=80');"></div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Ancho ao Ponto 🥩</h3>
+<span class="text-primary font-bold">R$ 84</span>
 </div>
-</footer>
-
-</body>
-</html>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Corte fictício grelhado, acompanhado de batatas e farofa imaginária.</p>
+<button class="w-full py-2 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-colors">Pedir Agora</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white dark:bg-background-dark border border-primary/5 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+<div class="h-64 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1600891965123-8c5ec7b93f1e?auto=format&fit=crop&w=800&q=80');"></div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Nhoque da Vovó 🍝</h3>
+<span class="text-primary font-bold">R$ 52</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4
